@@ -13,17 +13,17 @@ import java.util.Objects;
 @AllArgsConstructor
 public class UserRoleId {
     private String username;
-    private String role;
+    private Long roleId;
 
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         UserRoleId that = (UserRoleId) o;
-        return Objects.equals(username, that.username) && Objects.equals(role, that.role);
+        return Objects.equals(username, that.username) && Objects.equals(roleId, that.roleId);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(username, role);
+        return Objects.hash(username, roleId);
     }
 }

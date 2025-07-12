@@ -20,8 +20,8 @@ public class UserRoleEntity {
     private String username;
 
     @Id
-    @Column(nullable = false, length = 253)
-    private String role;
+    @Column(name = "role_id", nullable = false)
+    private Long roleId;
 
     @Column(name = "granted_date", nullable = false, columnDefinition = "TIMESTAMP")
     private LocalDateTime grantedDate;
@@ -29,5 +29,9 @@ public class UserRoleEntity {
     @ManyToOne
     @JoinColumn(name = "username", referencedColumnName = "username", insertable = false,updatable = false)
     private UserEntity user;
+
+    @ManyToOne
+    @JoinColumn(name = "role_id", referencedColumnName = "id", insertable = false, updatable = false)
+    private RoleEntity role;
 
 }
