@@ -17,6 +17,7 @@
         <module>auth-service</module>
         <module>owner-service</module>
         <module>gateway-service</module>
+        <module>discovery-service</module>
     </modules>
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
