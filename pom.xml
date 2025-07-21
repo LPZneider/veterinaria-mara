@@ -6,7 +6,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.4.0</version>
+        <version>3.5.3</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.vetmara</groupId>
@@ -15,6 +15,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>auth-service</module>
+        <module>owner-service</module>
+        <module>gateway-service</module>
     </modules>
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
